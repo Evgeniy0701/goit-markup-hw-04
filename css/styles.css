@@ -580,10 +580,8 @@ img {
 }
 
 .customer-item {
-  height: 88px;
-}
-.customer-item:first-child {
   width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 .customer-link {
