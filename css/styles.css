@@ -308,18 +308,13 @@ img {
 }
 
 /*------------------- SECTION 2 ---------------------*/
-
 .icon-list {
   list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
-
-.icon-list li {
-  margin-bottom: 8px;
-}
-
-.icon-container-svg{
+.icon-container-svg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,12 +322,19 @@ img {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-svg {
+.icon-container-svg svg {
   width: 64px;
   height: 64px;
+  fill: #4d5ae5; 
 }
+
+.icon-container-svg:hover svg {
+  fill: #31d0aa;
+}
+
 /*------------------- SECTION 2 FEATURES---------------------*/
 .visually-hidden {
   position: absolute;
