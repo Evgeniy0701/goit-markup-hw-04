@@ -432,7 +432,7 @@ img {
 }
 /*------------------ SECTION 4 TEAM-------------------------*/
 
-.made-listl {
+.made-list {
   border-top-left-radius: 0px; 
   border-top-right-radius: 0px; 
   border-top-right-radius: 4px; 
@@ -506,8 +506,13 @@ img {
 .social-media-list {
   list-style: none;
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: #404bbf;; 
 }
 
 .social-media-item {
@@ -524,13 +529,6 @@ img {
   background-color: var(--social-icon-color, #4d5ae5);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-media-link:hover {
-  background-color: #404bbf;
-}
-.social-media-link:focus {
-  background-color: #404bbf;
 }
 
 .social-media-icon {
