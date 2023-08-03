@@ -591,7 +591,16 @@ img {
   fill: currentColor;
 }
 
-/*--------------FOOTER---------------------------*/
+/*--------------FOOTER DIV 1---------------------------*/
+.footer-container{
+  margin-right: 120px;
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo-text {
+  margin-right: 120px;
+}
 
 .footer {
   background: var(--navyblue, #2e2f42);
@@ -607,6 +616,18 @@ img {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
+
+.footer-logo-link span {
+  color:  #f4f4fd;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .footer-text {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
@@ -615,6 +636,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  max-width: 264px;
 }
  
 .footer-logo {
@@ -628,20 +650,27 @@ img {
   text-transform: uppercase;
 }
 
-.footer-logo-link {
+.footer-logo-link  {
   display: inline-block;
   margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  position: relative;
+ 
  
 }
 
-.footer-text {
-  max-width: 264px;
- 
-}
-/*-----------------------FOOTER SOCIAL------------------*/
+/*-----------------------FOOTER SOCIAL DIV 2------------------*/
 .social-media-container {
-  margin-top: 20px;
+  
 }
+
 
 .social-media-title {
   font-size: 16px;
@@ -652,15 +681,17 @@ img {
   margin-bottom: 16px;
 }
 
-.social-media-list {
+.social-media-footer {
   display: flex;
   gap: 16px;
+
 
 }
 
 .social-media-item {
   width: 40px;
   height: 40px;
+
 }
 
 .social-media-link {
@@ -889,37 +920,3 @@ img {
 }
 
 /*------------FOOTER PORTFOLIO-------------- */
-.footer {
-  background: var(--navyblue, #2e2f42);
-}
-.footer-logo-link  {
-  color:  #4d5ae5;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
-.footer-text {
-  color: var(--cloud, #f4f4fd);
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-}
-
-.footer-logo-link span {
-  color:  #f4f4fd;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
