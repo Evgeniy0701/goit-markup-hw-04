@@ -318,7 +318,7 @@ img {
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 .icon-container-svg svg {
@@ -347,6 +347,7 @@ img {
 
 .features {
   padding: 120px 0;
+  background: #fff;
 }
 
 .features-list {
@@ -362,18 +363,6 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-.features-item:last-child {
-  margin-right: 0;
-}
-
-.features-subtitle {
-  margin-bottom: 8px;
-}
-
-.features {
-  background: #fff;
-}
-
 .features-subtitle {
   color: #2e2f42;
   font-size: 20px;
@@ -382,6 +371,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -400,9 +390,7 @@ img {
   padding-bottom: 120px;
   background: #fff;
 }
-.made-title {
-  margin-bottom: 72px;
-}
+
 .wedo-list {
   display: flex;
   gap: 24px;
@@ -412,9 +400,6 @@ img {
 
 .wedo-item {
   margin-right: 24px;
-}
-
-.wedo-item {
   margin-right: 0;
 }
 
@@ -539,13 +524,6 @@ img {
 .customers-section {
   padding: 120px 0;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 
 .customers-title {
   font-size: 36px;
@@ -777,7 +755,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-menu::after {
+.carend::after {
   content: '';
   position: absolute;
   left: 0;
@@ -812,35 +790,14 @@ img {
 .section-menu-item {
   margin-right: 24px;
   display: block;
+  background: #f4f4fd;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.section-menu-item .section-menu-link:hover,
-.section-menu-item .section-menu-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-
-.section-menu-link:hover
-.section-menu-link:focus  {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .section-menu-item:last-child {
   margin-right: 0;
 }
-
-.section-menu-link {
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-
-.section-menu-link:hover,
-.section-menu-link:focus {
-    border: 1px solid transparent;
-}   
-  
+ 
 .list-cap {
   justify-content: center;
   display: flex;
@@ -850,14 +807,6 @@ img {
   background: #fff;
 }
 
-.section-menu-link:hover {
-  color: #FFFFFF;
-}
-
-.section-menu-link:focus {
-  color: #FFFFFF;
-}
-
 .section-menu-name {
   font-weight: 500;
   font-size: 20px;
@@ -865,8 +814,16 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+.section-menu-link:hover,
+.section-menu-link:focus {
+  border: 1px solid transparent;
+  background-color: #404bbf;
+  color: #FFFFFF;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+} 
 
 .section-menu-link {
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #4d5ae5;
   background-color: #f4f4fd;
   text-align: center;
@@ -877,18 +834,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
-}
-
-.section-menu-link:hover {
-  background-color: #404bbf;
-}
-
-.section-menu-link:focus {
-  background-color: #404bbf;
-}
-
-.section-menu-item {
-  background: #f4f4fd;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .cards-container {
@@ -902,6 +850,20 @@ img {
   width: calc((100% - 48px) /3);
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-link:hover .cards-photo-text {
+  transform: translateY(100%);
+}
+
+.cards {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards:focus,
+.cards:hover {
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
 .container-cards-photo {
@@ -920,7 +882,6 @@ img {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
@@ -954,8 +915,4 @@ img {
   color: var(--paragraph-color, #434455);
 }
 
-.name-text-item:hover
-.name-text-item:focus{
-  transform: translateY(0%);
-}
 
