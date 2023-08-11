@@ -578,9 +578,6 @@ img {
 .footer-logo-text {
   margin-right: 120px;
   padding-left: 120px;
-  
-  
-  
 }
 
 .footer {
@@ -690,11 +687,11 @@ img {
 
 .social-media-icon:hover,
 .social-media-icon:focus{
-  background-color: #404bbf;
+  background-color:  #31d0aa;
 }
 
 /*-----------------------MODERN ------------------*/
-.modar-container {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -714,7 +711,7 @@ img {
 }
 
 
-.modar {
+.modal {
   background-color: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -729,7 +726,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modar-close-btn {
+.modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -746,8 +743,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modar-close-btn:hover
-.modar-close-btn:focus{
+.modal-close-btn:hover
+.modal-close-btn:focus{
   background-color: #404bbf;
   border: none;
 }
