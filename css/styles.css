@@ -271,10 +271,8 @@ img {
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -287,6 +285,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  margin: 0 auto;
   cursor: pointer;
   display: block;
   min-width: 169px;
@@ -695,7 +694,7 @@ img {
 }
 
 /*-----------------------MODERN ------------------*/
-.modal-container {
+.modar-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -715,7 +714,7 @@ img {
 }
 
 
-.modal {
+.modar {
   background-color: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -730,7 +729,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn {
+.modar-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -747,8 +746,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover
-.modal-close-btn:focus{
+.modar-close-btn:hover
+.modar-close-btn:focus{
   background-color: #404bbf;
   border: none;
 }
