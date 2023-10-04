@@ -387,38 +387,7 @@ img {
   letter-spacing: 0.32px;
 }
 
-/*----------- SECTION 3  what do we doing---------------*/
-
-.wedo {
-  padding-bottom: 120px;
-  background: #fff;
-}
-
-.wedo-list {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-}
-
-.wedo-item {
-  margin-right: 24px;
-  margin-right: 0;
-}
-
-.wedo-title {
-  color: #2e2f42;
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 72px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-}
-/*------------------ SECTION 4 TEAM-------------------------*/
+/*------------------ SECTION 3 TEAM-------------------------*/
 
 .made-list {
   border-top-left-radius: 0px;
