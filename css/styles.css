@@ -731,7 +731,7 @@ svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*-----------------------PORTFOLIO HEADER------------------*/
+/*-----------------------PORTFOLIO MENU------------------*/
 .link-menu {
   position: relative;
   color: #404bbf;
@@ -750,8 +750,29 @@ svg {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*-----------------------PORTFOLIO MAIN CAP SECTION ------------------*/
+/*----------------------- 4 PORTFOLIO MAIN CAP SECTION ------------------*/
+.section-menu {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
+.list-cards {
+  display: flex;
+  column-gap: 24px;
+  list-style: none;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.name-item-list {
+  width: calc((100% - 48px) / 3);
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name-item-list:hover {
+  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -765,19 +786,16 @@ svg {
   overflow: hidden;
 }
 
-.section-menu {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
+
 
 .section-menu-item {
   margin-right: 24px;
   display: block;
   background: #f4f4fd;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-menu-item:last-child {
@@ -811,9 +829,9 @@ svg {
 
 .section-menu-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #4d5ae5;
   background-color: #f4f4fd;
   text-align: center;
@@ -834,13 +852,16 @@ svg {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-/*---------------------PHOTO SECTION-------------------*/
-.name-item-list {
-  width: calc((100% - 48px) / 3);
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.list-cards {
+  display: flex;
+  column-gap: 24px;
+  list-style: none;
+  row-gap: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+
 
 .portfolio-link:hover .cards-photo-text {
   transform: translateY(0%);
@@ -856,7 +877,7 @@ svg {
 .cards:focus,
 .cards:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-cards-photo {
@@ -877,15 +898,6 @@ svg {
   width: 100%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
-}
-
-.list-cards {
-  display: flex;
-  column-gap: 24px;
-  list-style: none;
-  row-gap: 48px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .name-photo {
