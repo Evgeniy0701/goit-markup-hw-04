@@ -802,10 +802,13 @@ svg {
   transform: translateY(100%);
 }
 
- .cards-photo-text:hover {
-  transform: translateY(0%);
+li:hover .overlay {
+  transform: translateX(0%);
 }
 
+.cards-photo-text:hover {
+  transform: translateY(0%);
+}
 .cards-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -895,6 +898,10 @@ svg {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
+
+
+
+
 
 .name-photo {
   margin-bottom: 8px;
