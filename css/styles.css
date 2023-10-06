@@ -802,7 +802,7 @@ svg {
   transform: translateY(100%);
 }
 
-.name-item-list:hover .cards-photo-text {
+ .cards-photo-text:hover {
   transform: translateY(0%);
 }
 
